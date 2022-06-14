@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../static/css/global_var.css" rel="stylesheet"/>
+		<link href="../static/css/base.css" rel="stylesheet"/>
+		<link href="../static/css/login_register.css" rel="stylesheet"/>
+		<style></style>
+	</head>
+	<body>
+		<div class="head">
+			<h1>www.z-q-y.xyz</h1>
+			<a href="./">主页</a>
+		</div>
+		<div class="container">
+			<form id="register-form" method="post" action="../api/v1/register.php">
+				<div class="form-row"><label>用户名:</label><input type="text" name='username' placeholder="username"></div>
+				<div class="form-row"><label>密码:</label><input type="password" name='password1' placeholder="password"></div>
+				<div class="form-row"><label>确认密码:</label><input type="password" name='password2' placeholder="passsword again"></div>
+				<div><span>已有账户,</span><a href="./login.html">登录</a></div>
+				<div><input type="submit" value="注册"></div>
+			</form>
+		</div>
+	</body>
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/jquery.form.js"></script>
+	<script src="../static/js/login_register.js"></script>
+</html>

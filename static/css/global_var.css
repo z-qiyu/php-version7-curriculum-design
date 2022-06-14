@@ -1,0 +1,12 @@
+:root{
+	--bg-color: #fefefe;
+	--primery-btn-link: rgba(44, 202, 128, 1.0);
+	--primery-btn-link-hover: rgba(44, 202, 128, .7);
+	--waring-btn: rgba(233, 236, 19, 1.0);
+	--waring-btn-hover: rgba(233, 236, 19, .7);
+	--danger-btn: rgba(240, 36, 74, 1.0);
+	--danger-btn-hover: rgba(240, 36, 74, .7);
+	--btn-shadow: 1px 1px 5px 3px rgba(0,0,0,.1);
+	--btn-shadow-hover: 0 1px 4px 2px rgba(0,0,0,.1);
+	--div-shadow: 1px 1px 7px 3px rgba(0,0,0,.1);
+}

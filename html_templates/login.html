@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../static/css/global_var.css" rel="stylesheet"/>
+		<link href="../static/css/base.css" rel="stylesheet"/>
+		<link href="../static/css/login_register.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="head">
+			<h1>www.z-q-y.xyz</h1>
+			<a href="./">主页</a>
+		</div>
+		<div class="container">
+			<form id="login-form" method="post" action="../api/v1/login.php">
+				<div class="form-row"><label>用户名:</label><input type="text" name='username' placeholder="username"></div>
+				<div class="form-row"><label>密码:</label><input type="password" name='password' placeholder="password"></div>
+				<div><span>没有账户?</span><a href="./register.html">注册</a></div>
+				<div><input type="submit" value="登录"></div>
+			</form>
+		</div>
+	</body>
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/jquery.form.js"></script>
+	<script src="../static/js/login_register.js"></script>
+</html>

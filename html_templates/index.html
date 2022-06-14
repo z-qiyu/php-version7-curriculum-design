@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../static/css/global_var.css" rel="stylesheet"/>
+		<link href="../static/css/base.css" rel="stylesheet"/>
+		<link href="../static/css/index.css" rel="stylesheet"/>
+		<style></style>
+	</head>
+	<body>
+		<div class="head">
+			<h1>www.z-q-y.xyz</h1>
+			<div id="">
+				<a href="login.html">登录/注册</a>
+				<a href="#" data-link='../api/v1/logout.php' class="logout">退出登陆</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="firends msg-table">
+				<div class="msg-table-head">我的好友 <a href="#" id="addfriend">添加好友</a></div>
+				<div class="msg-table-content">
+					<div class="firends-item"><span>test</span><a>删除好友</a></div>
+
+				</div>
+			</div>
+			<div class="filetables  msg-table">
+				<div class="msg-table-head">文件目录 <a href="#" id="create">创建文件夹</a></div>
+				<div class="msg-table-content">
+					<div class="filetables-item">
+						<img src="../static/imgs/item.jpg">
+						<div class="filetables-content">test</div>
+					</div>
+				</div>
+			</div>
+			<div class="share  msg-table">
+				<div class="msg-table-head">共享文件目录</div>
+					<div class="msg-table-content">
+						<div class="filetables-item">
+							<img src="../static/imgs/item.jpg">
+							<div class="filetables-content">test</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="createfiletable" style="display:none">
+			<form method="post" id="ft-form" action="../api/v1/ft.php" >
+				<input type="hidden" name="type" value="add">
+				<input type="text" name="name" placeholder="名称" required />
+				<input type="number" name="max_length" placeholder="最大文件数量" required />
+				<input type="submit" value="提交" />
+			</form>
+			
+		</div>
+	</body>
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/jquery.form.js"></script>
+	<script src="../static/js/index.js"></script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../static/css/global_var.css" rel="stylesheet"/>
+		<link href="../static/css/base.css" rel="stylesheet"/>
+		<link href="../static/css/file.css" rel="stylesheet"/>
+		<style></style>
+	</head>
+	<body>
+		<div class="head">
+			<h1>www.z-q-y.xyz</h1>
+			<div id="">
+				<a href="login.html">登录/注册</a>
+				<a href="#" data-link='../api/v1/logout.php' class="logout">退出登陆</a>
+			</div>
+		</div>
+		<div class="container">
+			
+			<div class="share">
+				<h2>共享当前文件夹</h2>
+				<form method="post" class="fileform" action="../api/v1/share.php">
+					
+					<label>共享给好友:</label>
+					<select name="to_user" id="share_user" required">
+						<option id='dval' value="0">请选择</option>
+					</select>
+					<input type="submit" />
+				</form>
+			</div>
+			<div class="upload">
+				<h2>上传文件</h2>
+				<form enctype="multipart/form-data" class='fileform1' method="post"  action="../api/v1/file.php" >
+					<input type='text' name='name' placeholder="文件命名"  required >
+					<input type="hidden"  name="max_file_size" value="1048576" />
+					<input type="file" style="display: none;" name="file"  required />
+					<a href="#" id="loadfile">点击加载文件</a>
+					<input type="submit" />
+				</form>
+			</div>
+			<div class="files ">
+				<h2>当前文件</h2>
+				<div class="items msg-table-content">
+					
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/jquery.form.js"></script>
+	<script src="../static/js/file.js"></script>
+</html>
